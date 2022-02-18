@@ -33,7 +33,21 @@ To run a Gitpod with this repo:
 1) Create a free/paid Gitpod account - https://www.gitpod.io/
 2) Log into the account
 3) Open a new browser tab and add **gitpod.io/#https://github.com/RamSailopal/nodeglobal-d3tree** to the address - This will create a new Gitpod cloud instance.
-4) Wait till the Docker compose messages stop scrolling in the terminal and then click on the ports in the bottom right of the Gitpod window, then the globe icon next to the 3003 port. This will open another browser tab. The dTree chart for the global will appear.
+4) Wait till the Docker compose messages stop scrolling in the terminal and then click on the ports in the bottom right of the Gitpod window, then the globe icon next to the 3003 port. This will open another browser tab.
+5) Due to blocked cross origin requests, A CORS browser add-on also needs to be added and enabled
+   https://addons.mozilla.org/en-GB/firefox/addon/cors-everywhere/
+   
+   https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=en
+   
+   With the firefox addon, ensure that the plugin is enabled in the browser header as in the image below:
+   
+   ![Alt text](corsenabled.png?raw=true "CORS enabled")
+   
+   This contrasts to when CORS is disabled as in the image below:
+   
+   ![Alt text](corsdisabled.png?raw=true "CORS disabled") 
+   
+   Once the CORS plugin is enabled, the dTree chart for the global will appear.
 
 # References
 

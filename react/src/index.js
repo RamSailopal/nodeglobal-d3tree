@@ -12,7 +12,7 @@ let jsonstr= async() => {
 export const API_ROUTE = jsonstr().then((data)=> {
 	ReactDOM.render(
 		  <React.StrictMode>
-		    <div id="treeWrapper" style={{ width: '50em', height: '20em' }}>
+		    <div id="treeWrapper" style={{ width: '100em', height: '50em' }}>
 		                                                                     <Tree data={data} />
 		                                                                         </div>
 		  </React.StrictMode>,

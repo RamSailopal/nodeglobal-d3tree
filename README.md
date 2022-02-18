@@ -45,7 +45,7 @@ To run a Gitpod with this repo:
    
    This contrasts to when CORS is disabled as in the image below:
    
-   ![Alt text](corsdisabled.png?raw=true "CORS disabled") 
+   ![Alt text](https://github.com/RamSailopal/Fileman-d3/raw/main/corsdisabled.png?raw=true?raw=true "CORS disabled") 
    
    Once the CORS plugin is enabled, the dTree chart for the global will appear.
 

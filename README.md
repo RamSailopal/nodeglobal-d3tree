@@ -41,7 +41,7 @@ To run a Gitpod with this repo:
    
    With the firefox addon, ensure that the plugin is enabled in the browser header as in the image below:
    
-   ![Alt text](corsenabled.png?raw=true "CORS enabled")
+   ![Alt text](https://github.com/RamSailopal/Fileman-d3/raw/main/corsenabled.png?raw=true?raw=true "CORS enabled")
    
    This contrasts to when CORS is disabled as in the image below:
    

@@ -6,7 +6,7 @@ import axios from 'axios';
 import Tree from 'react-d3-tree';
 import reportWebVitals from './reportWebVitals';
 let jsonstr= async() => {
-	        var x= await axios({url: process.env.REACT_APP_GITADD + '?global=CARS'});
+	        var x= await axios({url: process.env.REACT_APP_GITADD + '?global=CARS',headers: {'origin': '*'}});
 	        return x.data
 }
 export const API_ROUTE = jsonstr().then((data)=> {

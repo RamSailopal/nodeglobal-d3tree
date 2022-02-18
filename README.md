@@ -4,7 +4,7 @@ A demonstration of viewing M globals in d3 using node and reactjs.
 
 Utilises nodem to attain data from YottaDB globals.
 
- ![Alt text](node-dtree.webp?raw=true?raw=true "Dtree view")
+ ![Alt text](node-d3tree.webp?raw=true?raw=true "Dtree view")
 
 The following CARS global is used for the demonstation:
 

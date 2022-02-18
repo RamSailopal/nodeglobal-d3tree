@@ -3,4 +3,7 @@ tasks:
       echo 'TODO: build project'
     command: |
       export GITADD="https://3002-${GITPOD_WORKSPACE_URL##https://}" && cd Docker && docker-compose up
-
+ports:
+  - port: 3002-3003
+    visibility: public
+    

@@ -1,0 +1,36 @@
+#
+#       AUTHOR - Raman Sailopal
+#
+#       docker compose yml file for the d3-tree/nodem/yottaDB stack
+#
+version: "2"
+services:
+ yottadb:
+   image: docker.io/yottadb/yottadb-base
+   hostname: yottadb
+   ports:
+      - 3002:3002 
+   volumes:
+      - ../:/home/nodem
+   networks:
+      - yottanet
+   entrypoint: [ "/bin/bash", "-c", "/home/nodem/provision" ]
+
+ react:
+   image: docker.io/ramb0/reactjs
+   hostname: react
+   ports:
+      - 3003:3000
+   environment:
+      - REACT_APP_GITADD=$GITADD
+   volumes:
+      - ../react/package.json:/home/dtree/package.json
+      - ../react/src:/home/dtree/src
+      - ../react/public:/home/dtree/public
+   networks:
+      - yottanet
+   entrypoint: [ "/bin/bash", "-c", "curl -sL https://deb.nodesource.com/setup_14.x | bash - && apt-get install -y nodejs && cd /home/dtree && npm install && npm start" ]
+
+
+networks:
+    yottanet:

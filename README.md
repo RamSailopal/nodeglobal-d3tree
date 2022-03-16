@@ -59,3 +59,4 @@ To run a Gitpod with this repo:
 
 **nodem** - https://github.com/dlwicksell/nodem
 
+**wc-d3** - https://github.com/robtweed/wc-d3

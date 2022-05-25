@@ -6,7 +6,7 @@
 version: "2"
 services:
  yottadb:
-   image: docker.io/yottadb/yottadb-base
+   image: docker.io/yottadb/yottadb-base:r1.32
    hostname: yottadb
    ports:
       - 3002:3002 
